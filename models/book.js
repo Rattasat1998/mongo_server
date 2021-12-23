@@ -2,12 +2,10 @@ const mongoose = require('mongoose');
 
 const BookSchema = mongoose.Schema({
     name: {
-        type: String,
-        required: true
+        type: String
     },
     author: {
-        type: String,
-        required: true
+        type: String
     },
     create_at: {
         type: Date,
