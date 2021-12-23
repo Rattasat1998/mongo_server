@@ -7,7 +7,7 @@ require('dotenv/config');
 app.use(bodyParser.json());
 const postsRoute = require('./routes/posts');
 
-app.use('/posts', postsRoute);
+app.use('/books', postsRoute);
 
 // connect to DB
 mongoose.connect(process.env.DB_CONNECTION,
