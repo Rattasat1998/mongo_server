@@ -1,4 +1,5 @@
 const express = require('express');
+const book = require('../models/book');
 const router = express.Router();
  const Book = require('../models/book');
 
@@ -6,7 +7,7 @@ const router = express.Router();
 router.get('/', async (req,res) => {
     try {
         const books = await Book.find();
-        res.json(books);
+        res.json({id: book._id ,data:books});
     } catch (error) {
         res.json({message:error});
     }
