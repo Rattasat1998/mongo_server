@@ -15,4 +15,4 @@ mongoose.connect(process.env.DB_CONNECTION,
     console.log('connected to MongoDB!');
 });
 
-app.listen(3000)
+app.listen(process.env.PORT)
